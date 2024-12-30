@@ -1,0 +1,179 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container to center the content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 45px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    float: left;
+    background-color:pink;
+    border-radius: 15px;
+}
+
+nav .nav-links {
+    list-style: none;
+    float: right;
+}
+
+nav .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, purple, #8BC34A);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    text-decoration: none;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Services Section */
+.services {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+/* Contact Section */
+.contact {
+    background-color: purple;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
